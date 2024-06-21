@@ -9,6 +9,7 @@ app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['ALLOWED_EXTENSIONS'] = {'png'}
 
 # double check application credentials
+# test commit from mac
 
 if not os.getenv('GOOGLE_APPLICATION_CREDENTIALS'):
 
