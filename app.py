@@ -8,12 +8,7 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['ALLOWED_EXTENSIONS'] = {'png'}
 
-# double check application credentials
-# new changes
-
-if not os.getenv('GOOGLE_APPLICATION_CREDENTIALS'):
-
-    raise RuntimeError("The GOOGLE_APPLICATION_CREDENTIALS environment variable is not set.")
+# removed check/runtime error
 
 # set the bucket as xmpl-bkt
 storage_client = storage.Client()
