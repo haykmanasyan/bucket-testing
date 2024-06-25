@@ -6,4 +6,5 @@
 
 # Deployment
  - built with a cloudbuild.yaml and Dockerfile
+ - requirements.txt to specify Flask/Google Cloud Storage version 
  - served using CloudRun
